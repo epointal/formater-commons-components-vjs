@@ -6,13 +6,16 @@ import vueCustomElement from 'vue-custom-element';
 Vue.use(vueCustomElement);
 
 //pour la traduction (non-utilisé pour le moment)
-//import VueI18n from 'vue-i18n';
-//Vue.use(VueI18n);
+import VueI18n from 'vue-i18n';
+Vue.use(VueI18n);
 
-//import VueResource from 'vue-resource';
-//Vue.use(VueResource);
+/*import VueResource from 'vue-resource';
+Vue.use(VueResource);*/
 
-//import SimpleComposant from './simple-composant/simple-composant.vue';
+
+
+
+import PdfComposant from './formater-pdf-viewer/formater-pdf-viewer.vue';
 
 
 
@@ -35,8 +38,8 @@ ljs.load('dep', function() {
 	
 
 	
-	//Vue.customElement('simple-composant', SimpleComposant);
-	//window.registredAerisElements.push('simple-composant');
+	Vue.customElement('formater-pdf', PdfComposant);
+	window.registredAerisElements.push('formater-pdf');
 
 
 })
