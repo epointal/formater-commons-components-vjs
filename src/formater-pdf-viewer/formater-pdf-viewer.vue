@@ -7,9 +7,11 @@
 		<button @click="rotate -= 90">&#x27F2;</button>
 		<button @click="$refs.pdf.print()">print</button>
 		<a :href="src" download><i class="fa fa-download"></i></a>
-		<div style="width: 50%">
+		<div style="width:600px;position:relative;">
+		<div style="position:absolute;top:0;left:0;">
 			<div v-if="loadedRatio > 0 && loadedRatio < 1" style="background-color: green; color: white; text-align: center" :style="{ width: loadedRatio * 100 + '%' }">{{ Math.floor(loadedRatio * 100) }}%</div>
 			<pdf  ref="pdf" class="formater-vue-pdf" :src="src" :page="page" :rotate="rotate" @progress="loadedRatio = $event" @error="error" @numPages="numPages = $event"></pdf>
+		</div>
 		</div>
 	</div>
 </template>
