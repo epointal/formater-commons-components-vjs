@@ -1,9 +1,21 @@
 {
   "name": "formater-commons-components-vjs",
-  "description": "Web composant de bases pour ForM@Ter",
+  "description": "Commons vuejs webcomponent for ForM@Ter",
   "version": "0.1.0",
   "author": "epointal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epointal/formater-commons-components-vjs.git"
+  },
+  "keywords": [
+    "vue.js",
+    "webcomponent"
+  ],
   "private": false,
+   "bugs": {
+    "url": "https://github.com/epointal/formater-commons-components-vjs/issues"
+  },
+  "homepage": "https://github.com/epointal/formater-commons-components-vjs#README",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --open --hot --inline",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
